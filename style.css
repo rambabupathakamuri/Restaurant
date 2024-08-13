@@ -198,8 +198,8 @@ button[type="submit"]:hover {
 }
 
 .menu-image {
-    width: 300px;
-    height: 200px;
+    width: 80px;
+    height: 80px;
     object-fit: cover; /* Ensures the image scales to fit without distorting */
     border-radius: 8px; /* Optional: Rounds the corners of the image */
 }
