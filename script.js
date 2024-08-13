@@ -1,16 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Initialize a simple map placeholder
     const map = document.getElementById('map');
-    map.innerHTML = '<p>Map placeholder: 123 Flavor Street, Boston, MA</p>';
+    if (map) {
+        map.innerHTML = '<p>Map placeholder: 123 Flavor Street, Boston, MA</p>';
+    }
 
-    // Smooth scroll for navigation links
-    document.querySelectorAll('nav ul li a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            document.getElementById(targetId).scrollIntoView({
-                behavior: 'smooth'
-            });
+    // Simple form submission handling
+    const form = document.getElementById('contact-form');
+    if (form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for contacting us! We will get back to you soon.');
+            form.reset();
         });
-    });
+    }
 });
