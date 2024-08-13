@@ -3,12 +3,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Light grey background for the entire page */
+    background-color: #f5f5f5;
     color: #333;
 }
 
 header {
-    background-color: #d32f2f; /* Deep red background for the header */
+    background-color: #d32f2f;
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -41,15 +41,22 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffe0b2; /* Lighter color on hover */
+    color: #ffe0b2;
 }
 
 #banner {
     position: relative;
     width: 100%;
     height: 60vh;
-    background: url('images/banner.jpg') center/cover no-repeat; /* Background image for the banner */
-    color: white; /* Ensure text is readable over the image */
+    background-color: #000;
+    color: white;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
 }
 
 .banner-text {
@@ -78,11 +85,11 @@ nav ul li a:hover {
 #home-intro {
     text-align: center;
     padding: 40px 0;
-    background-color: #ffffff; /* White background for sections */
+    background-color: #fff;
 }
 
 #home-intro h2 {
-    color: #d32f2f; /* Deep red color for headings */
+    color: #d32f2f;
     margin-bottom: 20px;
 }
 
@@ -93,13 +100,14 @@ nav ul li a:hover {
 }
 
 .highlight-item {
-    width: 30%;
+    width: 45%;
     text-align: center;
 }
 
 .highlight-item img {
     width: 100%;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .highlight-item h3 {
@@ -107,28 +115,8 @@ nav ul li a:hover {
     margin-top: 10px;
 }
 
-#about-teaser {
-    background-color: #333; /* Dark background for the about teaser section */
-    color: white;
-    padding: 40px 0;
-    text-align: center;
-}
-
-#about-teaser .btn {
-    background-color: #d32f2f; /* Deep red button background */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-#about-teaser .btn:hover {
-    background-color: #b71c1c; /* Darker red on hover */
-}
-
 footer {
-    background-color: #444; /* Dark grey background for the footer */
+    background-color: #444;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -141,58 +129,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-/* Contact Form Styles */
-#contact-form {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff; /* White background for the form */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.form-group textarea {
-    height: 100px;
-    resize: vertical;
-}
-
-button[type="submit"] {
-    background-color: #d32f2f; /* Deep red background for submit button */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button[type="submit"]:hover {
-    background-color: #b71c1c; /* Darker red on hover */
-}
-
-/* Map placeholder */
-#map {
-    width: 100%;
-    height: 300px;
-    background-color: #ddd; /* Light grey background for map placeholder */
-    margin-top: 20px;
-    border-radius: 8px;
 }
