@@ -14,4 +14,37 @@ document.addEventListener("DOMContentLoaded", function() {
             form.reset();
         });
     }
+
+    // Testimonials slider
+    let currentTestimonial = 0;
+    const testimonials = document.querySelectorAll('.testimonial');
+    if (testimonials.length > 0) {
+        function showTestimonial(index) {
+            testimonials.forEach((testimonial, i) => {
+                testimonial.style.display = i === index ? 'block' : 'none';
+            });
+        }
+        showTestimonial(currentTestimonial);
+        
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }, 5000); // Change testimonial every 5 seconds
+    }
+
+    // Order buttons click event
+    const orderButtons = document.querySelectorAll('.order-btn');
+    orderButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            alert('Item added to your order!');
+        });
+    });
+
+    // Reservation button click event
+    const reservationButton = document.getElementById('reservation-btn');
+    if (reservationButton) {
+        reservationButton.addEventListener('click', function() {
+            window.location.href = 'contact.html#contact-form';
+        });
+    }
 });
