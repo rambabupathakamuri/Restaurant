@@ -47,7 +47,7 @@ nav ul li a:hover {
 #banner {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 100vh;
     background: url('images/banner.jpg') center/cover no-repeat; /* Background image for the banner */
     color: white; /* Ensure text is readable over the image */
 }
